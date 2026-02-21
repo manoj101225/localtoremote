@@ -1,7 +1,90 @@
-<html>
-  <body>
-  <h1>
-    hello git fromhtml
-  </h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H1 Color Examples</title>
+
+<style>
+body {
+  background-color: #111;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 40px;
+  color: white;
+}
+
+/* Named Color */
+.named {
+  color: crimson;
+}
+
+/* HEX Color */
+.hex {
+  color: #3498db;
+}
+
+/* RGB */
+.rgb {
+  color: rgb(0, 255, 127);
+}
+
+/* RGBA */
+.rgba {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* Hover Effect */
+.hover {
+  color: white;
+  transition: 0.3s;
+}
+.hover:hover {
+  color: gold;
+}
+
+/* Gradient */
+.gradient {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Neon Glow */
+.neon {
+  color: #39ff14;
+  text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14,
+    0 0 40px #39ff14;
+}
+
+/* Animated Color */
+.animated {
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0%   { color: red; }
+  25%  { color: yellow; }
+  50%  { color: lime; }
+  75%  { color: cyan; }
+  100% { color: red; }
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="named">Named Color (Crimson)</h1>
+<h1 class="hex">HEX Color (#3498db)</h1>
+<h1 class="rgb">RGB Color</h1>
+<h1 class="rgba">RGBA Transparent</h1>
+<h1 class="hover">Hover Over Me</h1>
+<h1 class="gradient">Rainbow Gradient</h1>
+<h1 class="neon">Neon Glow Effect</h1>
+<h1 class="animated">Animated Color Changing</h1>
+
+</body>
 </html>
